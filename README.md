@@ -26,13 +26,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+They both loop through an array but forEach returns undefined.
+You can use forEach to apply logic to each element in the array but it will not mutate the original array or return anything.
+Map is also similar to that except it will apply the logic to each element and return a NEW array with the results of each element mutated.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function will take in another function for its argument.
+The function being plugged into a higher order function is known as a callback function.
 
 3. What is closure?
 
+Closure gives nested functions the ability to use things in the scope of the parent function.
+
 4. Describe the four rules of the 'this' keyword.
 
+Window binding is the default for 'this' meaning it will look at the window object for context is nothing else is available when invoked.
+Implicit binding is when 'this' looks to the left of a . for context
+Explicit binding is when you tell 'this' where to look for context by using a method such as .call()
+When using 'new' binding it will create a new object and set 'this' context to whatever you are referencing (ex - const a = new Person) the context will be a new object referencing Person
+
 5. Why do we need super() in an extended class?
+super() is what allows you to use the parent class values and methods
+
 
 ### Task 1 - Project Set up
 
